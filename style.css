@@ -1,0 +1,193 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Profile Card Styling */
+.profile-card {
+  background: #fff;
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Card Header */
+.card-header {
+  background: #007bff;
+  height: 120px;
+  position: relative;
+}
+
+.profile-img {
+  width: 90px;
+  height: 90px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Card Body */
+.card-body {
+  padding: 60px 20px 20px;
+}
+
+.card-body h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card-body p {
+  color: #777;
+  font-size: 0.9rem;
+  margin: 10px 0 20px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #555;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.action-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.action-buttons .subscribe-btn {
+  background: #007bff;
+  color: #fff;
+}
+
+.action-buttons .subscribe-btn:hover {
+  background: #0056b3;
+}
+
+.action-buttons .message-btn {
+  background: #f0f0f0;
+  color: #555;
+}
+
+.action-buttons .message-btn:hover {
+  background: #e0e0e0;
+}
+
+/* Card Footer */
+.card-footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  border-top: 1px solid #eee;
+  background: #fafafa;
+}
+
+.card-footer div {
+  text-align: center;
+  color: #333;
+}
+
+.card-footer div span {
+  font-weight: bold;
+  display: block;
+  color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-card {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .profile-img {
+    width: 70px; /* Adjust profile image size */
+    height: 70px;
+  }
+
+  .card-body h2 {
+    font-size: 1.3rem; /* Reduce font size for headings */
+  }
+
+  .social-icons {
+    gap: 10px; /* Reduce spacing between icons */
+  }
+
+  .action-buttons button {
+    padding: 6px 10px; /* Adjust button padding */
+    font-size: 0.8rem; /* Smaller text size */
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-card {
+    width: 95%; /* Almost full-width for very small screens */
+    border-radius: 10px; /* Smaller border radius */
+  }
+
+  .card-header {
+    height: 100px; /* Reduce header size */
+  }
+
+  .profile-img {
+    width: 60px; /* Further adjust image size */
+    height: 60px;
+  }
+
+  .card-body h2 {
+    font-size: 1.2rem; /* Reduce font size further */
+  }
+
+  .social-icons {
+    gap: 8px; /* Closer social icons */
+  }
+
+  .action-buttons button {
+    padding: 5px 8px; /* Adjust padding further */
+    font-size: 0.7rem;
+  }
+
+  .card-footer {
+    flex-direction: column; /* Stack footer items vertically */
+    gap: 5px; /* Add spacing between stacked items */
+  }
+}
